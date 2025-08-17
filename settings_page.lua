@@ -66,6 +66,14 @@ function M.Open(reloadFn)
     wnd:SetExtent(600, 350)
     wnd:Show(false)
 
+    -- Companion info
+    local companionlbl = wnd:CreateChildWidget("label", "companionlbl", 0, true)
+    companionlbl:SetText("This addon requires it's companion app and intiface central!")
+    companionlbl.style:SetAlign(ALIGN.CENTER)
+    companionlbl.style:SetFontSize(FONT_SIZE.SMALL)
+    companionlbl.style:SetColor(0.400, 0.251, 0.043, 1)
+    companionlbl:AddAnchor("TOP", wnd, 0, 40)
+
     -- Activators
     local activatelbl = wnd:CreateChildWidget("label", "activeLabel", 0, true)
     activatelbl:SetText("Set Vibration Activators")

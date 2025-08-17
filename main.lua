@@ -5,7 +5,7 @@ local hardCCList, softCCList = require("auto_vibrator/lib/cc_list")
 local auto_vibrator = {
 	name = "AutoVibrator",
 	author = "Emi",
-	version = "1.0",
+	version = "1.2",
 	desc = "Vibrations based on ingame events"
 }
 
