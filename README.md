@@ -2,17 +2,18 @@
 Addon for automated control of vibration devices based on in game events.
 
 # Requirements
-- Archeage Classic -> 
-- Companion app ->
-- Intiface Central ->
+- Archeage Classic -> https://aa-classic.com/  
+- Companion app -> https://github.com/BunnyEmika/ArcheageClassicAutoVibratorCompanionApp/releases/  
+- Intiface Central -> https://intiface.com/central/  
 
 # Usage
 - Install addon
     - Manual installation:  
       Download source and unzip in Documents/AAClassic/Addon/  
       Add -> auto_vibrator <- to addons.txt in Documents/AAClassic/Addon/ on a new line  
-      Launch archeage classic or reload addons  
-    - Manager installation: Currently Unavailable
+      Launch archeage classic or reload addons
+        
+    - Addon Manager installation: Currently Unavailable
   
 - Launch intiface central
   - Start server
