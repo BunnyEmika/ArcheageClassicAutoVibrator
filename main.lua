@@ -93,9 +93,10 @@ local function SendVibe(intensity, duration)
 	local ok, err = vibe.send_vibe(intensity, duration)
 	if not ok then
 		if err == "%%%%%" then
-			api.Log:Info("Deferring Input. Not Yet Processed")
+			--api.Log:Info("Deferring Input. Not Yet Processed")
+		else
+			api.Log:Info("Send Vibe Failed: " .. err)
 		end
-		api.Log:Info("Send Vibe Failed: " .. err)
 	end
 end
 
@@ -294,5 +295,6 @@ api.On("UPDATE", OnUpdate)
 auto_vibrator.OnLoad = OnLoad
 auto_vibrator.OnUnload = OnUnload
 auto_vibrator.OnSettingToggle = OnSettingToggle
+
 
 return auto_vibrator
