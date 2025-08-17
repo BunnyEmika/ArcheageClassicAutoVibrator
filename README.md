@@ -8,7 +8,7 @@ Addon for automated control of vibration devices based on in game events.
 
 # Usage
 - Install addon
-    - Manual installation: 
+    - Manual installation:  
       Download source and unzip in Documents/AAClassic/Addon/  
       Add -> auto_vibrator <- to addons.txt in Documents/AAClassic/Addon/  
       Launch archeage classic or reload addons  
