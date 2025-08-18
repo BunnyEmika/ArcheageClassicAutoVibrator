@@ -1,6 +1,7 @@
 local api = require("api")
 local vibe = require("auto_vibrator/vibe_writer")
-local hardCCList, softCCList = require("auto_vibrator/lib/cc_list")
+local hardCCList = require("auto_vibrator/lib/hard_cc_list")
+local softCCList = require("auto_vibrator/lib/soft_cc_list")
 
 local auto_vibrator = {
 	name = "AutoVibrator",
