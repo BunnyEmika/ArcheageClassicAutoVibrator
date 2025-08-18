@@ -185,10 +185,6 @@ local function OnLoad()
 	-- Hook into events
 	handler:RegisterEvent("COMBAT_TEXT")
 	handler:RegisterEvent("COMBAT_MSG")
-
-	if settings.activateOnDeath then
-		ADDON:RegisterContentTriggerFunc(UIC.DEATH_AND_RESURRECTION_WND, OnRespawnWindow)
-	end
 end
 
 local function OnUnload()
@@ -242,7 +238,6 @@ local function OnUpdate()
 	if hp <= 0 and not hasDied then
 		hasDied = true
 		if settings.activateOnDeath then
-			api.Log:Info("Seen Death")
 			SendVibe(settings.deathIntensity, settings.deathDuration)
 		end
 	elseif hasDied and hp > 0 then
@@ -295,6 +290,5 @@ api.On("UPDATE", OnUpdate)
 auto_vibrator.OnLoad = OnLoad
 auto_vibrator.OnUnload = OnUnload
 auto_vibrator.OnSettingToggle = OnSettingToggle
-
 
 return auto_vibrator
