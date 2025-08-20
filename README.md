@@ -25,3 +25,5 @@ Addon for automated control of vibration devices based on in game events.
     - Click Cog icon in bottom right
     - Click Addons
     - Click Cog under Options for AutoVibrator
+# Help
+Any issues/questions/requests can be asked by making an issue on this page. Alternatively directly through discord @ missemiko
